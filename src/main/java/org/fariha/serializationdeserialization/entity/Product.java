@@ -1,4 +1,4 @@
-package serializationdeserialization.entity;
+package org.fariha.serializationdeserialization.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

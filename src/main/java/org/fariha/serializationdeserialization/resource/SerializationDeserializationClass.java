@@ -1,4 +1,4 @@
-package serializationdeserialization.resource;
+package org.fariha.serializationdeserialization.resource;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;

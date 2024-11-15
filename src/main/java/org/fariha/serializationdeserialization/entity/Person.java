@@ -5,14 +5,15 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Person implements Serializable {
+    private static final long serialVersionUID = 1L;
 
-    private Long id;
-    private String username;
-    private String email;
-    private String password;
+    private String name;
+    private int age;
 }

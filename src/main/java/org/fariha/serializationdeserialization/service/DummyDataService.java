@@ -1,10 +1,10 @@
-package serializationdeserialization.service;
+package org.fariha.serializationdeserialization.service;
 
 
 import org.springframework.stereotype.Service;
-import serializationdeserialization.entity.Order;
-import serializationdeserialization.entity.Product;
-import serializationdeserialization.entity.User;
+import org.fariha.serializationdeserialization.entity.Order;
+import org.fariha.serializationdeserialization.entity.Product;
+import org.fariha.serializationdeserialization.entity.User;
 
 import java.util.ArrayList;
 import java.util.List;

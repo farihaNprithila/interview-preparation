@@ -1,11 +1,10 @@
-package serializationdeserialization.entity;
+package org.fariha.serializationdeserialization.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Id;
 
 @Getter
 @Setter
@@ -13,7 +12,6 @@ import javax.persistence.Id;
 @AllArgsConstructor
 public class Order {
 
-    @Id
     private Long id;
     private Long userId;
     private Long productId;
