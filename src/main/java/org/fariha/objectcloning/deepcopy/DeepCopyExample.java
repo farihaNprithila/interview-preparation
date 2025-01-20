@@ -23,7 +23,7 @@ public class DeepCopyExample {
     }
 }
 
-class Address {
+class Address implements Cloneable{
     String city;
     String country;
 
@@ -35,6 +35,11 @@ class Address {
     // Method to create a deep copy of Address
     Address deepCopy() {
         return new Address(this.city, this.country);
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }
 
@@ -51,7 +56,10 @@ class Person implements Cloneable {
     @Override
     protected Object clone() throws CloneNotSupportedException {
         Person clonedPerson = (Person) super.clone();
-        clonedPerson.address = this.address.deepCopy();
+        //clonedPerson.address = this.address.deepCopy();
+
+        //Another way of deep copy
+        clonedPerson.address=(Address) this.address.clone();
         return clonedPerson;
     }
 }
